@@ -175,7 +175,12 @@ lines(volest3,type=&quot;l&quot;,col=&quot;blue&quot;)
 legend(&quot;topleft&quot;,lty=1, col=c(1,&quot;black&quot;,&quot;red&quot;,&quot;blue&quot;),
        c(expression(decay==10), expression(decay==30),
          expression(decay==100)),pch=1)
-dev.off()</code></pre>
+dev.off()
+
+#render markdown file
+library(knitr)
+library(rmarkdown)
+rmarkdown::render(&quot;SNP500Report.md&quot;)</code></pre>
 </div>
 <div id="volitility-estimates" class="section level2">
 <h2>Volitility Estimates</h2>

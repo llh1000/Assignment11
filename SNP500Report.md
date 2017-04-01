@@ -56,6 +56,11 @@ legend("topleft",lty=1, col=c(1,"black","red","blue"),
        c(expression(decay==10), expression(decay==30),
          expression(decay==100)),pch=1)
 dev.off()
+
+#render markdown file
+library(knitr)
+library(rmarkdown)
+rmarkdown::render("SNP500Report.md")
 ```
 
 ##Volitility Estimates
