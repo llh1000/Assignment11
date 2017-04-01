@@ -2,7 +2,9 @@
 title: "Standard and Poor's 500 - Index Volatility"
 author: "Laurie Harris"
 date: "April 3, 2017"
-output: html_document
+output: 
+  html_document:
+    keep_md: true
 ---
 
 ```{r setup, include=FALSE}
@@ -11,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 ##Data Analysis Available
 This report and accompaning analysis files are available at https://github.com/llh1000/Assignment11
 
-##Standard and Poor's 500 Index
+##Standard and Poor's 500 Index/
 The Standard and Poors 500 Index (SNP500) is widely used a benchmark for the United States stock market.  Analyzing patterns and trends in this index can offer insight into the US stock market and national economy. We will examine the volatility of the SNP500 using three decay factors.
 
 ##Volatility Analysis and Computations

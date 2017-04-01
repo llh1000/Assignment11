@@ -1,15 +1,12 @@
----
-title: "Standard and Poor's 500 - Index Volatility"
-author: "Laurie Harris"
-date: "April 3, 2017"
-output: html_document
----
+# Standard and Poor's 500 - Index Volatility
+Laurie Harris  
+April 3, 2017  
 
 
 ##Data Analysis Available
-This report and accompaning analysis files are available at www.github.com/llh1000/Assignment11
+This report and accompaning analysis files are available at https://github.com/llh1000/Assignment11
 
-##Standard and Poor's 500 Index
+##Standard and Poor's 500 Index/
 The Standard and Poors 500 Index (SNP500) is widely used a benchmark for the United States stock market.  Analyzing patterns and trends in this index can offer insight into the US stock market and national economy. We will examine the volatility of the SNP500 using three decay factors.
 
 ##Volatility Analysis and Computations
@@ -52,7 +49,7 @@ volest3 <- getVol(100,SNPret)
 
 #plot volatility using the three different decay factors and save plot for report output
 jpeg("volplot.jpg")
-plot(volest,type="l",xlab = "Index", ylab = "Volatility Estimate")
+plot(volest, type="l",xlab = "Index", ylab = "Volatility Estimate")
 lines(volest2,type="l",col="red")
 lines(volest3,type="l",col="blue")
 legend("topleft",lty=1, col=c(1,"black","red","blue"),
